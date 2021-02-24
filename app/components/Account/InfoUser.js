@@ -17,7 +17,7 @@ export default function InfoUser(props){
 
     //funcion + PERMISOS para cambiar avatar (app.json)
     const changeAvatar =  async () => {
-        const resultPermission = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+        const resultPermission = await Permissions.askAsync(Permissions.CAMERA);
         // console.log(resultPermission);
         const resultPermissionCamera = resultPermission.permissions.mediaLibrary.status;
 
